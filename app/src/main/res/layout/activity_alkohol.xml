@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alkohol">
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Koliko ste popili?"
+        android:textColor="@color/offwhite"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="85dp"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/pivo" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="85dp"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="260dp"
+        app:srcCompat="@drawable/vino" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="85dp"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="410dp"
+        app:srcCompat="@drawable/zestoko" />
+
+    <TextView
+        android:id="@+id/pivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/offwhite"
+        android:layout_alignStart="@+id/TextView2"
+        android:layout_marginTop="165dp"
+        android:textSize="20sp"
+        android:text="Pivo (0.5l)" />
+
+    <TextView
+        android:id="@+id/vino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/offwhite"
+        android:layout_alignStart="@+id/TextView2"
+        android:layout_marginTop="315dp"
+        android:textSize="20sp"
+        android:text="Vino (0.2l)" />
+
+    <TextView
+        android:id="@+id/zestoko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/offwhite"
+        android:layout_alignStart="@+id/TextView2"
+        android:layout_marginTop="465dp"
+        android:textSize="20sp"
+        android:text="Žestoko (0.03l)" />
+
+    <EditText
+        android:id="@+id/kolkopiva"
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pivo"
+        android:layout_marginStart="290dp"
+        android:ems="10"
+        android:hint="0"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/kolkovina"
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/vino"
+        android:layout_marginStart="290dp"
+        android:ems="10"
+        android:hint="0"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/kolkozeste"
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/zestoko"
+        android:layout_marginStart="290dp"
+        android:ems="10"
+        android:hint="0"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/kraj"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="RAČUNAJ"
+        android:textColor="@color/offwhite" />
+
+</RelativeLayout>
