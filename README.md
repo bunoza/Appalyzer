@@ -1,6 +1,6 @@
 # Appalyzer
 
-An application which implements Widmark's formula for one's blood alcohol content.
+Android application which implements Widmark's formula for calculating blood alcohol content.
 
 ![](bac.png)
 
