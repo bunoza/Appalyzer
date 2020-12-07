@@ -2,6 +2,8 @@
 
 An application which implements Widmark's formula for one's blood alcohol content.
 
+![](bac.png)
+
 ### Compile SDK version
 
 API 27: Android 8.1 Oreo
